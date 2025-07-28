@@ -40,10 +40,9 @@ Using docker compose to containerize your application
 
 
 To run your docker compose, use the below command # docker-compose up --build
+<img width="1535" height="366" alt="image" src="https://github.com/user-attachments/assets/e37978cd-c9cf-48b6-b503-e3d8b57b6cfb" />
 
 After finish running, then check yyour image and the container  # docker images
-
-
 
 You will notice that, two images are added dream-vacantion-backend and dream-vacantion-frontend.
 
