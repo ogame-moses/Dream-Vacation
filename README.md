@@ -8,23 +8,22 @@ As regard this project we use docker-compose command to build and run both front
 Note: frontend and backend can be built differently, also postgress is used for database
 
 To build frontend,  use the command
-# docker build . -t moses-frontend:latest 
+# docker build . -t ogame/kc-frontend:latest 
+<img width="1340" height="226" alt="frontend-" src="https://github.com/user-attachments/assets/7b75ed36-1ff9-41ef-bdcb-9dd8fdfe2538" />
 
 You must run this command where the Dockerfile is located
 
-To push this to docker hub, we need to tag our image
-# docker build . -t ogame-moses/moses-frontend:latest
+To build backend,  use the command
+# docker build . -t ogame/kc-backend:latest
+<img width="1326" height="157" alt="backeend-" src="https://github.com/user-attachments/assets/c5395719-2797-4a35-b35d-3ca742e5149a" />
 
-You can check your image by running
-# docker images
 
-To containarize your docker image, run # docker run -d -p 80:80 ogame-moses/moses-frontend:latest
-
-Note wiskky is my docker hub username, change it to your own docker hub username.
+To containarize your docker image, run 
+# docker run -d -p 80:80 ogame-moses/moses-frontend:latest
+# docker run -d -p 3000:3000 ogame-moses/moses-backend:latest
+Note moxis07 is my docker hub username, change it to your own docker hub username.
 
 Then run # docker ps
-
-
 
 On your broswer, type http:localhost 
 
@@ -32,9 +31,10 @@ To push your image into docker hub, Then run
 
 # docker push ogame-moses/ogame/kc-frontend:latest 
 
-Login into your docker hhub accont and check 
+Login into your docker hub accont and check 
+<img width="1294" height="284" alt="image" src="https://github.com/user-attachments/assets/8e9b8f57-6b70-4d2a-af2f-106f4cbb8a5e" />
 
-NOTE For backend ollow the same step aove to run docker build command and push.
+NOTE  the same step above is repeated for the backend ;to run docker build command and push.
 
 Using docker compose to containerize your application
 
