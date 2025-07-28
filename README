@@ -30,7 +30,7 @@ On your broswer, type http:localhost
 
 To push your image into docker hub, Then run
 
-# docker push ogame-moses/moses-frontend:latest 
+# docker push ogame-moses/ogame/kc-frontend:latest 
 
 Login into your docker hhub accont and check 
 
